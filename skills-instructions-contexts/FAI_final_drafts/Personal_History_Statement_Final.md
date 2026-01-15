@@ -28,9 +28,9 @@ Can’t forget Yuliia. My co-founder, friend and partner-in-stupid-and-smart. Co
 
 Last but not least, my CEO Jay Ruparel, Tech Lead Khuldeep Yadav and the entire team at VoicePlug, who believed in me not in spite of my wacky career history but BECAUSE of it. Seeing my experience building Bobabike (bubble tea food truck on a bike), along with SWE as a cross-diciplinary blessing and creating a safe environment to fail and learn. They enabled me to build a platform-agnostic AI agent to automate table reservations at restaurants in 2 days and learning so much about the business along the way.
 
-When people ask me how Berkeley was, I usually just say "insane" for short, but believe it or not, this wasn't even the half of it. If I had to put it simply: Berkeley was a combination of everything that I am. These people showed me that it did not matter who you were, how big or small your dreams are. The isolation I met as I grew up the only black kid in a Norwegian town of 6000 people, did not matter. All the times I was counted out It did not matter. And for that, they keep a special place in my heart.
+When people ask me how Berkeley was, I usually just say "insane" for short, but believe it or not, this wasn't even the half of it. If I had to put it simply: Berkeley was a combination of everything that I am. These people showed me that it did not matter who you were, how big or small your dreams are. The isolation, neglect and dismissal I experienced growing up as the only Black kid in a Norwegian town of 6,000 didn't matter. All the times I was counted out didn't matter. And for that, they'll always hold a special place in my heart.
 
----
+
 
 **Personal History Statement**
 
