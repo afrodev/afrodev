@@ -1,3 +1,11 @@
+## If you're from Berkeley Admissions, 
+- you can partially see how I wrote the Statement of Purpose and Personal History Statement, using AI agents to keep track of a lot of data
+- done this way because 1. I'm on a time crunch with clients and 2. It's more fun + I get to develop a reusable workflow for my business.
+- you can see how I ideate and work in the transcripts from the voice memos
+- I'll be publishing the PHS Letter to afrodev.dev
+  
+
+
 ## Hi there 👋
 
 My name is Monzer Faisal. I don’t know how to sit still. I build things, solve problems, go on adventures. Both behind the screen and IRL. Most importantly, I enjoy every part of it🎉
