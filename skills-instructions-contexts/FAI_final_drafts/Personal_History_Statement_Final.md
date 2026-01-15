@@ -11,8 +11,12 @@ Instead, I'm letting my PHS be an open letter to Phi Kappa Tau, UCB & Silicon Va
 
 As I walk in to the frat for the first time, I'm greeted by Peter Choi, A Korean-American who seemed like the funniest, most unserious person, only for me to discover how hard working he was at the same time. Along with Jason Lee, who graduated with honors, they had been kind enough to invite me to their CDSS Class of '25 graduation, on my 2nd day. In those 2 days I got to talk to a bunch of the frat guys an their friends. I met undeniable geniuses in all different forms. One that stood out to me was Ishita Jain. Her journey from Singapore to UCB, to a NYC job right after graduation, facing uncertainty then and now, with a spark in her eye and childlike gumption. Another, Mikhal. Bulgarian international student staying up all night thinking about his startup, grinding research papers, and growing everyday. The frat's president, Hamza Bashir, who is the son of Palestinian immigrants, hustled his way to the top through internships across the U.S. and Middle East to make it to Oracle as a software engineer. Stella, kindly offering me F&F discount at the jewelry store she worked at because I liked the designs. Fabio, an Italian-Korean (the amount of stars that have to align for that) a kind, gentle, nurturing soul. Amin Shah showing me the ropes as his honorary "little" for the summer. I could go on about these incredible, hard-working, kind-spirited, intelligent individuals, and their sense of inclusivity and togetherness (even after our house got broken into), for days. To me, they set the blueprint for how anyone can make it at Berkeley & in life.
 
-##Paragraph for UCB (aka facilities, social spirit, professor Naeem,
+### Paragraph for UCB (aka facilities, social spirit, professor Naeem,
 
+
+### Paragraph for Sillicon Valley
+
+Sillicon Valley. Oh how you’ve changed me, broadened my horizons, showed me how no dream is too big, putting your tech, brains and your money where your mouth is!
 
 
 ### (this can be all the way at the end somehow)
