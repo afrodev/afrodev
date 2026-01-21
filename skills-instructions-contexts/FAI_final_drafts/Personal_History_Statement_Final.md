@@ -1,6 +1,3 @@
-**Disclaimer:**
-
-
 **Listen, I know the personal history statement isn't just a resume summary, and I know I could humble-brag about my "accomplishments." Like moving out only to be stolen from, assaulted, and almost stabbed by Norwegian roommate whose case Oslo police dismissed despite GBs of video evidence—all while working 12 hours a day to prevent my family's homelessness. Building the business I started at 17 with the governor's permission. Or how I navigated resulting debt and collections. I could mention finishing my 3-year first-gen degree in two years despite late ADHD-I diagnosis and 4 knee surgeries. I even coded my thesis from a hospital bed during at he month of life-threatening septic arthritis on morphine. I could detail spending a 3rd year fighting systemic rigidity that dropped my ITF20319 grade from a "D" to an "E" after formal complaint. Or even attending Berkeley at 23, completing my decade-long goal of working in an SV startup — since 13. Or maybe boast about placing 2nd in my cohort presentation—losing by one point despite a halved team—while still hiking Yosemite post-surgery to prove to myself I can do anything.
 
 I could do that... But I won't.
