@@ -36,33 +36,3 @@ Can’t forget Yuliia. My co-founder, friend and partner-in-stupid-and-smart. Co
 Last but not least, my CEO Jay Ruparel, Tech Lead Khuldeep Yadav and the entire team at VoicePlug, who believed in me not in spite of my wacky career history but BECAUSE of it. Viewing my Bobabike experience, along with SWE as a cross-disciplinary blessing and creating a safe environment to fail and learn. They enabled me to build a platform-agnostic AI agent to automate table reservations at restaurants in 2 days and learning so much about the business along the way.
 
 When people ask me how Berkeley was, I usually just say "insane" for short, but believe it or not, this wasn't even the half of it. If I had to put it simply: Berkeley was a combination of everything that I am. These people showed me that it did not matter who you were, how big or small your dreams are. The isolation I met as I grew up the only black kid in a Norwegian town of 6000 people, did not matter. All the times I was counted out It did not matter. And for that, they keep a special place in my heart.
-
-**
-
-
-
-**Personal History Statement**
-
-People often ask me how my time at Berkeley was, and I usually reply with: "It was an insane experience."
-
-That is the short version. The long version is a story about how a single summer in California undid sixteen years of cultural dissonance and revealed to me who I could be if I weren't constantly fighting to be understood.
-
-My family immigrated from Sudan to Norway when I was nine. We were placed in a small town of 6,000 people where we were the only Black family. In that environment, my survival mechanism was "masking." I learned to speak Norwegian perfectly—so perfectly that on the phone, you would assume I was a local. But this linguistic fluency created a trap. Because I sounded like "one of them," everyone assumed I understood the unspoken social cues, the cultural rigidities, and the law of *Janteloven*—the Scandinavian code that discouraged standing out.
-
-I didn't. I was energetic, ambitious, and curious in a culture that valued conformity. Teachers interpreted my divergent thinking not as engagement, but as disruption. I was labeled the "class clown," a role that masked a deep confusion. I couldn't understand why my questions were dismissed as "silly" or why my high energy was met with hostility. I internalized their confusion as my own stupidity.
-
-To survive the isolation, I built a parallel life online. While I was disregarded in the classroom, I spent twelve hours a day on my computer, teaching myself video editing, marketing, and dance. By sixteen, I was a hired hip-hop dance instructor; by nineteen, my ventures were paying my family's rent. Yet, in the eyes of my Norwegian educators and peers, I remained the "outsider" who just didn't get it. I was constantly battling a system that saw my background as a deficit rather than a perspective.
-
-Then came Berkeley.
-
-I arrived in the Bay Area for the Gründerskolen program, carrying the weight of that imposter syndrome. I expected another battle. Instead, I found a culture of abundance that felt like oxygen after years of holding my breath.
-
-At Berkeley, and in the wider Silicon Valley ecosystem, my "deficits" were suddenly assets. My high energy wasn't "disruptive"; it was "founder energy." My non-traditional background wasn't "confusing"; it was "unique perspective."
-
-I remember walking into a co-working space in Oakland. I was just a student working alone, but two Managing Partners of a VC firm with a $49B+ portfolio stopped their entire team just to introduce themselves. They didn't care about my pedigree or that I didn't fit the mold; they saw someone working hard and offered me networking tips and their personal contacts. In fifteen minutes, they validated what I had been questioning about myself for over a decade.
-
-For the first time, I wasn't the "class clown" masking his intellect. I was Monzer, the engineer and entrepreneur, and that was enough. I met people who looked like me, spoke like me—mixing sophisticated technical English with the cadence of Black American culture—and who were leading global companies. I met a Ugandan entrepreneur building renewable energy grids; I met Corporate Law experts like Judy Ling and investors like Bobby Dunphy who didn't just tolerate my ambition—they fueled it.
-
-This wasn't just professional networking; it was profound emotional healing. I saw a "trial version" of who I could be in a supportive environment. The cultural dissonance that had plagued me in Norway vanished. I realized that the friction I felt wasn't because I was "broken" or "stupid," but because I was an engine built for high velocity stuck in a school zone.
-
-I am applying to the Master of Engineering program not just for the technical skills, but because Berkeley is the only place where I have been able to be my full self. I want to return to the environment that turned my "insane experience" into a clear vision. I want to formalize the leadership style I discovered there—one that leverages diversity not as a quota, but as a competitive advantage. I am ready to stop surviving my environment and start engineering it, bringing the velocity of Berkeley back to the problems that need it most.
