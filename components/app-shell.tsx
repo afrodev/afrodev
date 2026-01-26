@@ -43,7 +43,7 @@ const AboutMe = () => (
         <h1 className="text-3xl font-bold tracking-tight lowercase">about me</h1>
         <ul className="space-y-4 text-lg text-zinc-600 dark:text-zinc-300">
             <li>- 24-year-old Multicultural Software Engineer & Entrepreneur.</li>
-            <li>- Moving between Norway, Sudan, and Berkeley.</li>
+            <li>- From Sudan, grew up in Norway, work with people from all over the world (USA, India, UAE, EU etc).</li>
             <li>- Focusing on AI Agents, Full-Stack Dev, and Social Impact.</li>
         </ul>
     </div>
@@ -60,11 +60,16 @@ const TheLetter = ({ content }: { content: string }) => {
     }, [content]);
 
     return (
-        <div className="max-w-4xl prose prose-zinc dark:prose-invert prose-lg 
-                   prose-headings:font-bold prose-h1:text-3xl prose-p:leading-relaxed lowercase-headings">
-            <ReactMarkdown>
-                {safeContent}
-            </ReactMarkdown>
+        <div className="space-y-6">
+            <div className="p-4 border-l-4 border-brand-fuchsia bg-brand-fuchsia/10 rounded-r-lg">
+                <p className="italic">I just applied to UCB MEng and instead of a typical Personal History Statement, I wrote a letter to *some* of the people who ispired me during my time there.</p>
+            </div>
+            <div className="max-w-4xl prose prose-zinc dark:prose-invert prose-lg 
+                       prose-headings:font-bold prose-h1:text-3xl prose-p:leading-relaxed lowercase-headings">
+                <ReactMarkdown>
+                    {safeContent}
+                </ReactMarkdown>
+            </div>
         </div>
     );
 };
@@ -91,10 +96,7 @@ const QuickLinks = () => (
                 <span className="font-semibold lowercase">linkedin</span>
                 <span className="text-zinc-400 text-sm lowercase">(best for dms)</span>
             </a>
-            <a href="#" className="flex items-center gap-3 p-4 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors pointer-events-auto">
-                <span className="font-semibold lowercase">twitter / x</span>
-            </a>
-            <a href="mailto:contact@afrodev.dev" className="flex items-center gap-3 p-4 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors pointer-events-auto">
+            <a href="mailto:monzergmc1@gmail.com" className="flex items-center gap-3 p-4 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors pointer-events-auto">
                 <span className="font-semibold lowercase">email</span>
             </a>
         </div>
@@ -147,7 +149,7 @@ export default function AppShell({ letterContent }: AppShellProps) {
         {
             id: "links",
             label: "quick links",
-            preview: "LinkedIn, Twitter, Email.",
+            preview: "LinkedIn, Email.",
             icon: LinkIcon
         },
         {
@@ -156,19 +158,25 @@ export default function AppShell({ letterContent }: AppShellProps) {
             preview: "24yo Engineer. Norway, Sudan, Berkeley.",
             icon: User
         },
-        {
-            id: "making-of",
-            label: "the making of",
-            preview: "Building this site in 48 hours.",
-            icon: Code2
-        },
+        // {
+        //     id: "making-of",
+        //     label: "the making of",
+        //     preview: "Building this site in 48 hours.",
+        //     icon: Code2
+        // },
     ] as const;
 
-    // Logic to go to next page
+    // Logic to go to next/prev page
     const handleNextPage = () => {
         const currentIndex = navItems.findIndex(item => item.id === activeSection);
         const nextIndex = (currentIndex + 1) % navItems.length; // Loop back to start
         setActiveSection(navItems[nextIndex].id as SectionId);
+    };
+
+    const handlePrevPage = () => {
+        const currentIndex = navItems.findIndex(item => item.id === activeSection);
+        const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length; // Loop back to end
+        setActiveSection(navItems[prevIndex].id as SectionId);
     };
 
     // Content Renderer
@@ -266,30 +274,50 @@ export default function AppShell({ letterContent }: AppShellProps) {
                         </AnimatePresence>
                     </div>
 
-                    {/* Floating Navigation Button */}
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={handleNextPage}
-                        className="fixed bottom-8 left-1/2 md:left-[calc(50%+10rem)] -translate-x-1/2 z-50 
-                         flex items-center justify-center w-14 h-14 rounded-full 
-                         bg-brand-fuchsia text-white shadow-lg hover:shadow-xl transition-shadow
-                         border-2 border-white/20 backdrop-blur-sm"
-                        aria-label="Next Section"
-                    >
-                        <motion.svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24"
-                            viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2.5"
-                            strokeLinecap="round" strokeLinejoin="round"
-                            animate={{ y: [0, 5, 0] }} // Gentle bounce animation
-                            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                    {/* Floating Navigation Buttons */}
+                    <div className="fixed bottom-8 left-1/2 md:left-[calc(50%+10rem)] -translate-x-1/2 z-50 flex gap-2">
+                        <motion.button
+                            whileHover={activeSection !== navItems[0].id ? { scale: 1.1 } : {}}
+                            whileTap={activeSection !== navItems[0].id ? { scale: 0.9 } : {}}
+                            onClick={handlePrevPage}
+                            disabled={activeSection === navItems[0].id}
+                            className={cn(
+                                "flex items-center justify-center w-9 h-9 rounded-full transition-all",
+                                activeSection === navItems[0].id
+                                    ? "bg-brand-fuchsia/30 text-white/40 cursor-not-allowed"
+                                    : "bg-brand-fuchsia text-white hover:bg-brand-fuchsia/80"
+                            )}
+                            aria-label="Previous Section"
                         >
-                            <path d="M12 5v14" />
-                            <path d="m19 12-7 7-7-7" />
-                        </motion.svg>
-                    </motion.button>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" strokeWidth="2"
+                                strokeLinecap="round" strokeLinejoin="round"
+                            >
+                                <path d="m5 12 7-7 7 7" />
+                            </svg>
+                        </motion.button>
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={handleNextPage}
+                            className="flex items-center justify-center w-9 h-9 rounded-full 
+                             bg-brand-fuchsia text-white hover:bg-brand-fuchsia/80 transition-all"
+                            aria-label="Next Section"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" strokeWidth="2"
+                                strokeLinecap="round" strokeLinejoin="round"
+                            >
+                                <path d="m19 12-7 7-7-7" />
+                            </svg>
+                        </motion.button>
+                    </div>
                 </div>
             </main>
         </div>

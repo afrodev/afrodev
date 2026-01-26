@@ -6,8 +6,8 @@
   --foreground: #171717;
   
   /* Brand Colors */
-  --brand-fuchsia: #990033; /* Deep Crimson/Fuchsia blend */
-  --brand-pink: #ffd1dc;    /* Light Pink text color */
+  --brand-fuchsia: #7c3aed; /* Electric Violet */
+  --brand-pink: #ede9fe;    /* Light Lavender */
 }
 
 @theme inline {
