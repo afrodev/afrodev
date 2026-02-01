@@ -121,6 +121,31 @@ export default function AppShell({ letterContent }: AppShellProps) {
     const [activeSection, setActiveSection] = React.useState<SectionId>("mission"); // Default to Mission as requested
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
+    // #region agent log
+    React.useEffect(() => {
+        const body = document.body;
+        const bodyFont = body ? getComputedStyle(body).fontFamily : "";
+        const bodyVar = body ? getComputedStyle(body).getPropertyValue("--font-source-code-pro").trim() : "";
+        const rootFontSans = getComputedStyle(document.documentElement).getPropertyValue("--font-sans").trim();
+        const h1 = document.querySelector("h1");
+        const h1Font = h1 ? getComputedStyle(h1).fontFamily : "";
+        const loadedFamilies = Array.from(document.fonts).map((f) => f.family);
+        const adriannaLoaded = document.fonts.check("1em Adrianna");
+        fetch("http://127.0.0.1:7245/ingest/fa2f0a28-d79d-41ad-9b37-721710130be3", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                location: "app-shell.tsx:useEffect",
+                message: "font debug",
+                data: { bodyFont, bodyVar, rootFontSans, h1Font, loadedFamilies, adriannaLoaded },
+                timestamp: Date.now(),
+                sessionId: "debug-session",
+                hypothesisId: "H1-H4",
+            }),
+        }).catch(() => {});
+    }, []);
+    // #endregion
+
     // Generate preview for the letter (clean up markdown symbols for preview)
     const letterPreview = letterContent
         .replace(/[#*`_]/g, '') // Remove basic markdown syntax
