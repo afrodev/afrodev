@@ -1,5 +1,17 @@
 "use client";
 
+import Link from "next/link";
+
+const TEAM = [
+  {
+    slug: "monzer",
+    name: "Monzer Faisal",
+    role: "CEO & Founder",
+    oneLiner: "From Sudan to Norway — building bridges between talent and impact.",
+  },
+  // Add more team members; personal pages at /team/[slug] (Issue #9)
+];
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100">
@@ -86,6 +98,35 @@ export default function LandingPage() {
           <p>
             Our network uses a cross-subsidizing model so locals can afford it while we stay profitable. The goal: save lives, promote education, build schools, and boost local business. From Norway to Africa, and back.
           </p>
+        </div>
+      </section>
+
+      {/* Why us — Issue #8: team grid, link to personal pages */}
+      <section
+        id="why-us"
+        className="py-24 px-6 sm:px-10 md:px-16 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+          Why us
+        </h2>
+        <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mb-16">
+          The people behind afrodev: who we are, what we care about, and why we’re building this.
+        </p>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {TEAM.map((member) => (
+            <Link
+              key={member.slug}
+              href={`/team/${member.slug}`}
+              className="group rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-white dark:bg-zinc-900/50 hover:border-violet-500/50 dark:hover:border-violet-500/50 transition-colors"
+            >
+              <div className="w-20 h-20 rounded-full bg-zinc-200 dark:bg-zinc-700 mb-4 flex items-center justify-center text-xl font-semibold text-zinc-500 dark:text-zinc-400 group-hover:text-violet-600 dark:group-hover:text-violet-400">
+                {member.name.split(" ").map((n) => n[0]).join("")}
+              </div>
+              <h3 className="font-semibold text-lg">{member.name}</h3>
+              <p className="text-sm text-violet-600 dark:text-violet-400 mb-2">{member.role}</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">{member.oneLiner}</p>
+            </Link>
+          ))}
         </div>
       </section>
     </div>
