@@ -12,6 +12,18 @@ const TEAM = [
   // Add more team members; personal pages at /team/[slug] (Issue #9)
 ];
 
+const PROJECTS = [
+  {
+    slug: "example-client",
+    title: "Example client project",
+    clientNeed: "A Norwegian company needed smarter automation and a clearer path from data to decisions.",
+    howWeSolved: "We built an agentic workflow that connects their tools and surfaces the right insights. Shorter feedback loops, less manual work.",
+    imageRight: false,
+    imagePlaceholder: true,
+  },
+  // Add real projects; case studies at /projects/[slug]
+];
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100">
@@ -128,6 +140,47 @@ export default function LandingPage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* Projects / client work — Issue #10: full-screen cards, alternating, case study link */}
+      <section
+        id="projects"
+        className="border-t border-zinc-200 dark:border-zinc-800"
+      >
+        {PROJECTS.map((project, i) => (
+          <div
+            key={project.slug}
+            className="min-h-[80vh] py-24 px-6 sm:px-10 md:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          >
+            <div className={project.imageRight ? "lg:order-2" : ""}>
+              <div className="aspect-video rounded-2xl bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 text-sm">
+                {project.imagePlaceholder ? "Project image" : ""}
+              </div>
+            </div>
+            <div className={project.imageRight ? "lg:order-1" : ""}>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+                {project.title}
+              </h2>
+              <p className="text-zinc-600 dark:text-zinc-400 mb-4 max-w-xl">
+                {project.clientNeed}
+              </p>
+              <p className="text-zinc-600 dark:text-zinc-400 mb-8 max-w-xl">
+                {project.howWeSolved}
+              </p>
+              <Link
+                href={`/projects/${project.slug}`}
+                className="inline-flex items-center text-violet-600 dark:text-violet-400 font-medium hover:underline"
+              >
+                Read the case study →
+              </Link>
+            </div>
+          </div>
+        ))}
+        {PROJECTS.length === 0 && (
+          <div className="py-24 px-6 text-center text-zinc-500 dark:text-zinc-400">
+            Our current work with clients — coming soon.
+          </div>
+        )}
       </section>
     </div>
   );
