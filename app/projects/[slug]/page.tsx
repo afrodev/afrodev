@@ -8,7 +8,7 @@ export default async function ProjectPage({
   const { slug } = await params;
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100 px-6 py-24">
-      <Link href="/landing#projects" className="text-violet-600 dark:text-violet-400 text-sm hover:underline">
+      <Link href="/#projects" className="text-violet-600 dark:text-violet-400 text-sm hover:underline">
         ← Back to Projects
       </Link>
       <h1 className="mt-6 text-2xl font-bold capitalize">{slug.replace(/-/g, " ")}</h1>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const TEAM = [
   {
@@ -27,6 +28,28 @@ const PROJECTS = [
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100">
+      {/* Header — Issue #11: YC-style nav + logo from landing-page-stuff */}
+      <header className="sticky top-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 dark:supports-[backdrop-filter]:bg-[#0a0a0a]/80">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/Afrologo-nobg.png"
+              alt="afrodev"
+              width={120}
+              height={36}
+              className="h-9 w-auto dark:invert"
+            />
+          </Link>
+          <nav className="hidden sm:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">What we do</a>
+            <a href="#what-we-do-with-the-money" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">The money</a>
+            <a href="#why-us" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Why us</a>
+            <a href="#projects" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Projects</a>
+            <Link href="/original" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Original site</Link>
+          </nav>
+        </div>
+      </header>
+
       {/* Hero — Issue #2: strong headline + slide 0, crowd/support vibe */}
       <section
         id="hero"

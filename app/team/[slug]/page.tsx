@@ -8,7 +8,7 @@ export default async function TeamMemberPage({
   const { slug } = await params;
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100 px-6 py-24">
-      <Link href="/landing#why-us" className="text-violet-600 dark:text-violet-400 text-sm hover:underline">
+      <Link href="/#why-us" className="text-violet-600 dark:text-violet-400 text-sm hover:underline">
         ← Back to Why us
       </Link>
       <h1 className="mt-6 text-2xl font-bold capitalize">{slug}</h1>
