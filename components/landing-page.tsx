@@ -34,6 +34,39 @@ export default function LandingPage() {
           </a>
         </div>
       </section>
+
+      {/* Services — Issue #3 */}
+      <section
+        id="services"
+        className="py-24 px-6 sm:px-10 md:px-16 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+          What we do
+        </h2>
+        <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mb-16">
+          We build AI software for Norwegian businesses. Agentic orchestration, SaaS, and Silicon Valley–grade workflows — so your product is smarter, your users get a seamless experience, and your data works for you.
+        </p>
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl">
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50/50 dark:bg-zinc-900/30">
+            <h3 className="font-semibold text-lg mb-2">Agentic AI & orchestration</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              We use agentic workflows to make your software more efficient and user-focused. From automation to intelligent assistants — built for real business outcomes.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50/50 dark:bg-zinc-900/30">
+            <h3 className="font-semibold text-lg mb-2">Software as a service</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              End-to-end SaaS: design, build, deploy, and iterate. We track usage and data so you can predict user needs and scale with confidence.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50/50 dark:bg-zinc-900/30 sm:col-span-2 lg:col-span-1">
+            <h3 className="font-semibold text-lg mb-2">Norway-first, impact-next</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              We serve Norwegian companies first. Revenue from that work funds internet and infrastructure in Africa — so our expertise and capital compound where they’re needed most.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
