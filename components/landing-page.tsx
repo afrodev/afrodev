@@ -67,6 +67,27 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* What are we doing with the money? — Issue #4 */}
+      <section
+        id="what-we-do-with-the-money"
+        className="py-24 px-6 sm:px-10 md:px-16 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/20"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+          What are we doing with the money?
+        </h2>
+        <div className="max-w-2xl space-y-4 text-zinc-600 dark:text-zinc-400 text-lg">
+          <p>
+            We build AI software for Norwegian companies. That revenue doesn’t sit in a vault — it funds the next phase.
+          </p>
+          <p>
+            We reinvest into building internet in Congo and across Africa: villages, cities, microgrids, and education on the ground so people can grow their economies and businesses.
+          </p>
+          <p>
+            Our network uses a cross-subsidizing model so locals can afford it while we stay profitable. The goal: save lives, promote education, build schools, and boost local business. From Norway to Africa, and back.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
