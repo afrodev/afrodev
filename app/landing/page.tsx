@@ -1,5 +1,5 @@
-import LandingSkeleton from "@/components/landing-skeleton";
+import LandingPage from "@/components/landing-page";
 
-export default function LandingPage() {
-  return <LandingSkeleton />;
+export default function LandingRoute() {
+  return <LandingPage />;
 }
