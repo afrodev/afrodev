@@ -1,7 +1,21 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
+
+const EarthGlobeCanvas = dynamic(
+  () => import("@/components/earth-globe-canvas"),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        className="h-full min-h-[280px] w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900/80 motion-safe:animate-pulse"
+        aria-hidden
+      />
+    ),
+  }
+);
 
 const TEAM = [
   {
@@ -50,35 +64,42 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Hero — Issue #2: strong headline + slide 0, crowd/support vibe */}
+      {/* Hero — Issue #2: headline + interactive Earth (R3F) */}
       <section
         id="hero"
         className="min-h-screen flex flex-col justify-center px-6 sm:px-10 md:px-16 pt-24 pb-20"
       >
-        <p className="text-sm font-medium text-violet-600 dark:text-violet-400 uppercase tracking-wider mb-4">
-          AI software · Internet infrastructure · Impact
-        </p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl leading-[1.1]">
-          Afrodev — AI Software consultancy, Internet That Saves Lives
-        </h1>
-        <p className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl">
-          We build agentic AI for Norwegian businesses at the speed of Silicon Valley,
-          and reinvest in building internet across Africa. From villages to cities —
-          we deploy networks that save lives and grow local economies.
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-medium px-6 py-3 transition-colors"
-          >
-            Get in touch
-          </a>
-          <a
-            href="#why-us"
-            className="inline-flex items-center justify-center rounded-lg border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-800 font-medium px-6 py-3 transition-colors"
-          >
-            Why us
-          </a>
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="min-w-0">
+            <p className="text-sm font-medium text-violet-600 dark:text-violet-400 uppercase tracking-wider mb-4">
+              AI software · Internet infrastructure · Impact
+            </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl leading-[1.1]">
+              Afrodev — AI Software consultancy, Internet That Saves Lives
+            </h1>
+            <p className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl">
+              We build agentic AI for Norwegian businesses at the speed of Silicon Valley,
+              and reinvest in building internet across Africa. From villages to cities —
+              we deploy networks that save lives and grow local economies.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-medium px-6 py-3 transition-colors"
+              >
+                Get in touch
+              </a>
+              <a
+                href="#why-us"
+                className="inline-flex items-center justify-center rounded-lg border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-800 font-medium px-6 py-3 transition-colors"
+              >
+                Why us
+              </a>
+            </div>
+          </div>
+          <div className="relative mx-auto aspect-square w-full max-w-md lg:max-w-none min-h-[280px] lg:min-h-[min(52vh,520px)]">
+            <EarthGlobeCanvas className="absolute inset-0 h-full w-full touch-none rounded-2xl overflow-hidden" />
+          </div>
         </div>
       </section>
 
@@ -170,7 +191,7 @@ export default function LandingPage() {
         id="projects"
         className="border-t border-zinc-200 dark:border-zinc-800"
       >
-        {PROJECTS.map((project, i) => (
+        {PROJECTS.map((project) => (
           <div
             key={project.slug}
             className="min-h-[80vh] py-24 px-6 sm:px-10 md:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
