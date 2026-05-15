@@ -12,7 +12,7 @@ My name is Monzer Faisal. I don’t know how to sit still. I build things, solve
 📫 How to reach me:
 
 - [LinkedIn](https://www.linkedin.com/in/monzer-faisal/)
-- [Email me](mailto:monzergmc1@gmail.com)
+- [Email me](mailto:monzer@afrodev.dev)
 
 <!--
 **afrodev/afrodev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
